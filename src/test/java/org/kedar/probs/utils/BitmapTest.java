@@ -11,7 +11,7 @@ public class BitmapTest extends TestCase {
 
     @Test
     public void testBasics() {
-        Bitmap bm = new Bitmap(1L<<33);
+        Bitmap bm = new Bitmap();
         bm.set(4000000000L);
         assertTrue(bm.test(4000000000L));
         assertFalse(bm.test(13L));
